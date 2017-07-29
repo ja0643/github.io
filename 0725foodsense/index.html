@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>FOODSENSE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/0052_foodsense.jpg">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="row clearfix">
+                <h1 id="logo2">food sense</h1>
+                <ul id="menu">
+                    <li><a href="#" class="btn_menu btn_Tastemaker">Tastemaker</a></li>
+                    <li><a href="#" class="btn_menu btn_Blog">Blog</a></li>
+                    <li><a href="#" class="btn_menu btn_The-A-List">The A-List</a></li>
+                    <li><a href="#" class="btn_menu btn_Contribute">Contribute</a></li>
+                    <li><a href="#" class="btn_menu btn_About">About</a></li>
+                </ul>
+                <h1 id="logo">food sense</h1>
+            </div>
+        </header>
+        <section class="body-container">
+            <div class="fs-slider-wrap">
+                <ul class="fs-slider">
+                    <li><img src="img/0140_foodsense.jpg" alt="" class="slide-img"></li>
+                    <li><img src="img/0219_foodsense.jpg" alt="" class="slide-img"></li>
+                    <li><img src="img/0052_foodsense.jpg" alt="" class="slide-img"></li>
+                    <li><img src="img/0232_foodsense.jpg" alt="" class="slide-img"></li>
+                </ul>
+                <div id="fs-pager">
+                    <a href="#" data-slide-index="0">Tastemaker</a>
+                    <a href="#" data-slide-index="1">Blog</a>
+                    <a href="#" data-slide-index="2">The A-List</a>
+                    <a href="#" data-slide-index="3">Contribute</a>
+                </div>
+            </div>
+            <div id="newsletter">
+                <p class="desc"><i class="fa fa-envelope-o"></i>Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</p>
+                <form class="form1">
+                    <input type="text" placeholder="email주소를 넣으세요">
+                    <input type="submit" value="subscribe">
+                </form>
+            </div>
+            <div id="recent" class="clearfix">
+                <div class="col">
+                    <a href="#"><img src="img/cookbooks_blog.jpg" alt=""><span class="title">2012’s Best Summer Cookbooks</span></a>
+                    <p>With the best of the season coming from “orchards, farms and gardens,” NPR has put together an impressive collection of 10 summer cookbooks.</p>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="img/SweetPotatoChips.jpg" alt=""><span class="title">How to Make Vegetable Chips</span></a>
+                    <p>About a month ago, I ate almost an entire box of kale chips. My brother and I were visiting our cousin in Brooklyn, and before a very thoughtfully prepared vegan…</p>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="img/Pinterest_Page_featured.png" alt=""><span class="title">Join us on Pinterest!</span></a>
+                    <p>If I could curate a cookbook for you, this would be it.</p>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="img/Adithi_Dinner_blog.jpg" alt=""><span class="title">Recipes from a Sunday Supper</span></a>
+                    <p>I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful Sunday supper - eat them slowly, a little bit at…</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content-wrap">
+                <div class="footer-content">
+                    &copy;2017 Food Sense, all rights reserved.
+                    
+                    <span class="icons">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-rss"></i>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+    $(function(){
+        $('.fs-slider').bxSlider({
+            mode:'fade',
+            auto:true,
+            pagerCustom:'#fs-pager'
+        });
+        
+        $('#recent .col').matchHeight();
+    });
+    </script>
+</body>
+</html>

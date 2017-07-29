@@ -1,0 +1,127 @@
+/* reset */
+body,div,ul,li,h1,h2,h3,h4,h5,h6,p{margin: 0; padding: 0;}
+img{border: 0; vertical-align: top;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+/* 공통 요소 */
+.clearfix{display: block; clear: both; content: '';}
+
+/* 레이아웃 요소 */
+.wrap{margin: 0 auto;}
+header.header{position: relative; }
+.header .row{margin: 0 auto;}
+.body-container{position: relative;}
+footer.footer{padding: 2em 0; clear: both; position: relative;}
+
+/* 메뉴 */
+#menu{width: 320px; margin: 0 auto; border-bottom: 1px solid #f2f2f2;}
+#menu:after{display: block; clear: both; content: '';}
+#menu li{float: left; }
+#menu li a{ display: block; padding: 1em 0.5em; font-size: 12px; color: #34ac98; font-weight: bold; } 
+#menu li a.btn_menu:hover{color: #ec6635;}
+
+/* 로고 */
+#logo{width: 120px; height: 120px; background:url(../img/food-sense.png) 0 -60px no-repeat; text-indent: -9999px; background-size: 120px 180px; margin: 10px auto;}
+
+#logo2{display: none;}
+
+/*slide*/
+.fs-slider-wrap{}
+.slide-img{width: 100%;}
+.fs-slider-wrap .bx-wrapper .bx-controls-direction a{display: none;}
+
+/* custom pager */
+#fs-pager{display: none;}
+#fs-pager:after{display: block; clear: both; content: '';}
+#fs-pager a{display: block; width: 25%; height: 35px;line-height: 35px; float: left; text-align: center; color: #78bfbf; background-color: #eff8f7; font-size: 14px;}
+#fs-pager a.active{background-color: #d9efec;}
+#fs-pager a.active:hover{color: #78bfbf;}
+#fs-pager a:hover{color: #ef4d35;}
+
+#newsletter{width: 100%; padding: 20px 0; margin: 1em 0; border-top: 1px dashed #e5e5e5; border-bottom: 1px dashed #e5e5e5;  }
+#newsletter .desc{font-size: 12px; margin-bottom: 1em; padding-left: 15px; padding-right: 15px;}
+#newsletter .form1{padding-left: 15px;}
+
+/*recent*/
+#recent{padding: 5px;}
+#recent .col{float: left; width: 100%; padding: 4px 0; margin-bottom: 10px;}
+#recent .col a{display: block; margin: 0 5px;  font-size: 14px;}
+#recent .col p{margin: 0 5px; font-size: 10px;}
+#recent .col img{width: 100%; border: 1px solid #ccc; padding: 9px; box-sizing: border-box; background-color: #fff; margin-bottom: 5px;}
+#recent .title{display: block; margin-bottom: 7px; color: #34ac98;}
+
+/* footer */
+footer.footer{background-color: #ccc; }
+footer.footer .footer-content{font-size: 10px; margin-left: 20px;}
+.icons{float: right; margin-right: 10px; font-size: 20px;}
+
+
+
+
+/* mobile landscape */
+@media screen and (min-width:415px) and (max-width:767px){
+    .wrap{width: 480px;}
+    #menu{float: right; border-bottom-width: 0; margin-top: 50px; margin-right: 10px;}
+    #logo{float: left;}
+    .header .row{width: 480px; height: 150px;}
+    
+    #recent .col{width: 50%;}
+    #fs-pager{display: none;}
+    #newsletter .desc{padding-left: 15px; padding-right: 15px;}
+    #newsletter .form1{padding-left :15px;}
+}
+
+/* tablet potrait */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+    #menu{width: 380px; float: right; border-bottom-width: 0; margin-top: 35px;}
+    #logo{float: left;}
+    .header .row{width: 700px; height: 150px;}
+    #menu li a.btn_menu{background-position: center 0; background-repeat: no-repeat; padding: 40px 1em 0 1em; transition: background-position 0.3s;}
+    .btn_Tastemaker{background-image: url(../img/nav-tastemakers.png);}
+    .btn_Blog{background-image: url(../img/nav-blog.png);}
+    .btn_The-A-List{background-image: url(../img/nav-alist.png);}
+    .btn_Contribute{background-image: url(../img/nav-contribute.png);}
+    .btn_About{background-image: url(../img/nav-about.png);}
+    #menu li a.btn_menu:hover{background-position: center 3px;}
+    .wrap{width: 700px;}
+    #recent{height: 300px;}
+    #recent .col{width: 25%;}
+    #fs-pager{display: block;}
+    #newsletter{width: 700px; height: 40px;  }
+    #newsletter .desc{width: 350px; float: left; padding-left: 15px;}
+    #newsletter .form1{float: right; padding-right: 15px;}
+    
+}
+
+/* tablet landscape or pc */
+@media screen and (min-width:1024px) {
+    #logo2{display: block; width: 120px; height: 120px; background:url(../img/food-sense.png) 0 -60px no-repeat; text-indent: -9999px; background-size: 120px 180px; margin-bottom: 35px; }
+    #logo{display: none;}
+    
+    .btn_Tastemaker{background-image: url(../img/nav-tastemakers.png);}
+    .btn_Blog{background-image: url(../img/nav-blog.png);}
+    .btn_The-A-List{background-image: url(../img/nav-alist.png);}
+    .btn_Contribute{background-image: url(../img/nav-contribute.png);}
+    .btn_About{background-image: url(../img/nav-about.png);}
+    #menu{float: none; width: 160px; margin: 0; border-bottom-width: 0;}
+    #menu li{float: none;}
+    .wrap{width: 1024px; margin-top: 50px;}
+    header.header{float: left; margin-right: 14px;}
+    .body-container{float: right; width: 850px;}
+    #menu li a.btn_menu{ background-position: left 0; background-repeat: no-repeat; padding: 10px 1em 20px 4em; transition: background-position 0.3s; }
+    #menu li a.btn_menu:hover{background-position: 8px 0;}
+    #recent{height: 300px;}
+    #recent .col{width: 25%; }
+    #fs-pager{display: block;}
+    #newsletter{width: 100%; height: 30px;}
+    #newsletter .desc{width: 500px; float: left;padding-left: 15px;}
+    #newsletter .form1{float: right;padding-right: 15px;}
+    
+}
+
+
+
+
+
