@@ -47,7 +47,7 @@ body{color: #666; background-color: rgb(246,246,246);overflow-x: hidden;}
 #btn_hamburger .line{display: block; width: 20px; height: 3px; margin: 3px 0; background-color: #980000;}
 .gnb{ z-index: 888px; position: absolute; top:73px; }
 .gnb{background-color: #980000; display: none; width: 100%;}
-.gnb li{padding: 8px; border: 1px solid #fff;}
+.gnb li{padding: 10px; border: 1px solid #fff;}
 .gnb li a{color:#fff}
 .gnb .name{color: #e9e9e9; font-weight: bold;}
 #c1{display: none;}
@@ -135,7 +135,7 @@ footer.footer span{font-style: italic; margin-left:40% ; line-height: 40px;}
 #map{width: 100%; height: 300px;margin-top: 5%;}
 
 /*top*/
-#top{width: 57px; position: absolute; top:500px;right: 0; z-index: 999px; }
+#top{width: 57px; position: absolute; top:450px;right: 0; z-index: 999px; }
 
 
 
