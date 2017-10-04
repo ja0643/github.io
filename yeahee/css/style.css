@@ -47,7 +47,7 @@ body{color: #666; background-color: rgb(246,246,246);overflow-x: hidden;}
 #btn_hamburger .line{display: block; width: 20px; height: 3px; margin: 3px 0; background-color: #980000;}
 .gnb{ z-index: 888px; position: absolute; top:73px; }
 .gnb{background-color: #980000; display: none; width: 100%;}
-.gnb li{padding: 10px; border: 1px solid #fff;}
+.gnb li{padding: 14px; border: 1px solid #fff;}
 .gnb li a{color:#fff}
 .gnb .name{color: #e9e9e9; font-weight: bold;}
 #c1{display: none;}
