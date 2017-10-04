@@ -9,6 +9,9 @@
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/init.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2W5RjXjV6QurhMZAXNKoI_fdVT6WIW70&callback=initMap">
+    </script>
 </head>
 <body>
     <div class="wrap">
@@ -51,6 +54,30 @@
                     
                 </div>
             </div>
+            
+            <label for="c1" id="btn_hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+                <input type="checkbox" id="c1">
+                <div class="gnb">
+                    <ul>
+                        <li class="name"><a href="notice.html">공지사항</a></li>
+                        <li class="name">DAYE</li>
+                        <li><a href="yephoto.html">▶PHOTO</a></li>
+                        <li><a href="#">▶</a></li>
+                        
+                        <li class="name">JUNGAH</li>
+                        <li><a href="ahphoto.html">▶PHOTO</a></li>
+                        <li><a href="#">▶</a></li>
+                        
+                        <li class="name">HEEJU</li>
+                        <li><a href="heephoto.html">▶PHOTO</a></li>
+                        <li><a href="#">▶</a></li>
+                        
+                    </ul>
+                </div>
         </header>
         <div class="body-container">
             <div class="main-images-wrap">
@@ -69,8 +96,8 @@
                    <label for="ck1">YE's SNS</label>
 
                    <div class="content">
-                       <a href="https://www.instagram.com/jdayej/"><img src="img/Logo-Instagram.png" alt=""></a>
-                       <a href="https://www.instagram.com/angry_daye/"><img src="img/Logo-Instagram.png" alt=""></a>
+                       <a href="https://www.instagram.com/jdayej/"><img src="img/Logo-Instagram%20.png" alt=""></a>
+                       <a href="https://www.instagram.com/angry_daye/"><img src="img/Logo-Instagram%20.png" alt=""></a>
                        <a href="https://www.facebook.com/"><img src="img/facebook.png" alt=""></a>
 
                        <p>facebook_주소를찾지못했다</p>
@@ -82,7 +109,7 @@
                    <label for="ck2">AH's SNS</label>
 
                    <div class="content">
-                       <a href="https://www.instagram.com/ja0643/"><img src="img/Logo-Instagram.png" alt=""></a>
+                       <a href="https://www.instagram.com/ja0643/"><img src="img/Logo-Instagram%20.png" alt=""></a>
                        <a href="https://www.facebook.com/jungah0643"><img src="img/facebook.png" alt=""></a>
 
                    </div>
@@ -92,20 +119,30 @@
                    <label for="ck3">HEE's SNS</label>
                    <div class="content">
                        <a href="https://www.facebook.com/"><img src="img/facebook.png" alt=""></a>
+                       
                        <p>여기도..주소못찾음</p>
                    </div>
                 </div>
             </div>
             <div class="tel-wrap">
-                <h2 class=tel-title>TEL</h2>
+                <div class="tel-ti">
+                    <img src="img/phone-call.png" alt="">
+                    <h2 class=tel-title>TEL</h2>
+                </div>
                 <ul class="tel">
-                    <li><a href="tel:01024696124"><img src="img/tel1.png" alt=""></a></li>
-                    <li><a href="tel:01020500643"><img src="img/tel3.png" alt=""></a></li>
-                    <li><a href="tel:01023743683"><img src="img/tel2.png" alt=""></a></li>
+                    <li><a href="tel:01024696124"><img src="img/tel1.png" alt=""><p class="da">DAYE</p></a></li>
+                    <li><a href="tel:01020500643"><img src="img/tel3.png" alt=""><p>JUNGA</p></a></li>
+                    <li><a href="tel:01023743683"><img src="img/tel2.png" alt=""><p>HEEJU</p></a></li>
                 </ul>
-                <p class="da">DAYE</p>
-                <p>JUNGA</p>
-                <p>HEEJU</p>
+                
+            </div>
+            <div id="map-wrap">
+               <h2>우리동네</h2>
+                <div id="map"></div>
+            </div>
+            
+            <div id="top">
+                <a href="#"><img src="img/top.png" alt="top"></a>
             </div>
        
         </div>
@@ -119,6 +156,8 @@
     $(function(){
         $('.main-images').bxSlider();
     });
+    
+     
     </script>
 </body>
 </html>
