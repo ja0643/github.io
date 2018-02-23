@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>TwosomePlace</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+    <link rel="icon" type="image/ico" href="images/favicon_192.ico" sizes="192x192">
+    <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+</head>
+<body>
+     
+           <!-- 스킵 메뉴 -->
+            <div class="skipMenu">
+                <a href="sub-menu-coffee.html"><span>메뉴 바로가기</span></a>
+                <a href="sub-store-sch.html"><span>매장찾기 바로가기</span></a>
+                <a href="sub-event.html"><span>이벤트 바로가기</span></a>
+                <a href="sub-login.html"><span>로그인 바로가기</span></a>
+            </div>
+            <!-- 헤더 -->
+            <header id="header">
+                <div class="header-wrap">
+                    <!-- 로고 -->
+                    <h1 class="logo"><a href="index.html">투썸 플레이스</a></h1>
+                    <!-- 주요메뉴 -->
+                    <div class="gnb-wrap">
+                        <div class="gnb-items">
+                            <h2 class="none">주요 메뉴</h2>
+                            <ul>
+                            <li class="gnb-item">
+                                <a href="sub-brandstory.html">브랜드스토리</a>
+                                <span></span>
+                                <ul class="sub-items">
+                                        <li class="sub-item"><a href="sub-brandstory_1.html">브랜드이야기</a></li>
+                                        <li class="sub-item"><a href="sub-coffeestory.html">커피이야기</a></li>
+                                        <li class="sub-item"><a href="sub-dessertstory.html">디저트이야기</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item"><a href="sub-menu-coffee.html">메뉴</a>
+                                <span></span>
+                                <ul class="sub-items">
+                                        <li class="sub-item"><a href="sub-menu-coffee.html">커피 &amp; 음료</a></li>
+                                        <li class="sub-item"><a href="sub-menu-cake.html">케이크</a></li>
+                                        <li class="sub-item"><a href="sub-menu-dessert.html">디저트 &amp; 델리</a></li>
+                                        <li class="sub-item"><a href="sub-menu-md.html">MD</a></li>
+                                        <li class="sub-item"><a href="sub-menu-order.html">온라인 예약</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item"><a href="sub-store-sch.html">매장정보</a>
+                                <span></span>
+                                <ul class="sub-items">
+                                    <li class="sub-item"><a href="sub-store-sch.html">매장찾기</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item"><a href="sub-event.html">이벤트</a>
+                                <span></span>
+                                <ul class="sub-items">
+                                        <li class="sub-item"><a href="sub-event.html">이벤트</a></li>
+                                        <li class="sub-item"><a href="sub-membership.html">멤버쉽카드</a></li>
+                                        <li class="sub-item"><a href="sub-class.html">디저트 &amp; 커피 클래스</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item"><a href="sub-roastery.html">로스터리 카페</a>
+                                <span></span>
+                                <ul class="sub-items">
+                                        <li class="sub-item"><a href="sub-roastery.html">로스터리 카페</a></li>
+                                </ul>    
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_bg"></div>
+                  
+                <div class="top-menu-wrap">
+                    <div class="tm_wrap">
+                        <div class="lang-tap">
+                            <h2 class="none">언어 선택</h2>
+                                <a href="#">LANGUAGE<span></span></a>
+                                    <ul class="lang-list" style="display:none">
+                                        <li><a href="index.html">KOREAN</a></li>
+                                        <li><a href="#">ENGLISH</a></li>
+                                        <li><a href="#">CHINESE</a></li>
+                                    </ul>
+                        </div>
+                        <div class="top-menu">
+                            <h2 class="none">사용자 메뉴</h2>
+                            <ul>
+                                <li><a href="sub-FAQ.html">고객센터</a></li>
+                                <li><a href="sub-login.html">로그인</a></li>
+                                <li><a href="sub-join_1.html">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </header>
+            <div class="join_bg_1">
+                <div class="join-wrap">
+                        <div class="join-title-wrap">
+                            <h2 class="join-title">CJ푸드빌 + CJ ONE 통합회원 가입</h2>
+                            <span></span>
+                        </div>
+                        <div class="join_step-wrap">
+                            <h2 class="none">회원가입 단계</h2>
+                            <ul class="join_step">
+                                <li>본인인증</li>
+                                <li class="arrow3"></li>
+                                <li>약관동의</li>
+                                <li class="arrow3"></li>
+                                <li class="j_now_info">정보입력</li>
+                                <li class="arrow3"></li>
+                                <li>가입완료</li>
+                            </ul>
+                        </div>
+                        <div class="join3-wrap">
+                            <div class="information-wrap">
+                                <div class="info-wrap">
+                                    <h2 class="info-title">기본정보</h2>
+                                    <div class="info-type">
+                                        <form action="" name="" method="">
+                                            <fieldset>
+                                                <legend>기본정보 입력</legend>
+                                                <p>
+                                                    <label for="info_id">CJ ONE 아이디</label>
+                                                    <input type="text" id="info_id">
+                                                    <button class="info_id_chk">중복확인</button>
+                                                </p>
+                                                <p>
+                                                    <label for="info_pw">비밀번호</label>
+                                                    <input type="password" id="info_pw" name="pwd">
+                                                </p>
+                                                <p>
+                                                    <label for="info_pw_chk">비밀번호 확인</label>
+                                                    <input type="password" id="info_pw_chk" name="pwd1">
+                                                </p>
+                                                <p>
+                                                    <label for="info_name">이름</label>
+                                                    <input type="text" id="info_name">
+                                                </p>
+                                                <p>
+                                                    <label for="info_ph_num">휴대폰 번호</label>
+                                                    <select id="info_ph_num" class="info_ph_num1">
+                                                        <option value="010">010</option>
+                                                        <option value="010">011</option>
+                                                        <option value="010">012</option>
+                                                        <option value="010">013</option>
+                                                        <option value="010">014</option>
+                                                        <option value="010">015</option>
+                                                        <option value="010">016</option>
+                                                        <option value="010">017</option>
+                                                        <option value="010">018</option>
+                                                        <option value="010">019</option>
+                                                    </select>
+                                                    <input type="tel" class="info_ph_num2">
+                                                    <input type="tel" class="info_ph_num2">
+                                                </p>
+                                                <p>
+                                                    <label for="info_add">주소</label>
+                                                    <input type="text" id="info_add" placeholder="우편번호">
+                                                    <button class="add_sch" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">우편번호</button>
+                                                    <input type="text" id="info_add_2" placeholder="도로명주소">
+                                                    <input type="text" id="info_add_3" placeholder="지번주소">
+                                                </p>
+                                                
+                                                <p>
+                                                    <label for="info_email">이메일</label>
+                                                    <input type="email" id="info_email">
+                                                </p>
+                                                <button type="submit" class="info_submit">회원가입</button>
+                                            </fieldset>
+                                        </form>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+            </div>
+            <footer class="footer">
+                    <div class="footer-wrap">
+                        <div class="info-policy">
+                            <a href="#" class="bd">회사소개</a>
+                            <a href="sub-sitemap.html" class="bd bd_2">사이트맵</a>
+                            <a href="#" class="bd bd_2">리쿠르트</a>
+                            <a href="#" class="bd bd_2">이용약관</a>
+                            <a href="#" class="bd bd_2">개인정보처리방침</a>
+                            <a href="#" class="bd bd_2">이메일 무단수집거부</a>
+                            <a href="#" class="bd bd_2">법적고지</a>
+                            <a href="#" class="bd_2">윤리신고센터</a>
+                        </div>
+                        <div class="CJ">
+                            <div class="CJ_btn">
+                                <a href="#CJ_open">CJ 그룹 계열사 바로가기 <span></span></a>
+                            </div>
+                            <div id="CJ_open" class="CJ_open"></div>
+                        </div>
+                        <div class="copyright">
+                            <address class="bd mg">(우)04555 서울시 중구 마른내로34(초동 106-9번지) KT &amp; G을지로타워 3-6/8-11층 CJ푸드빌(주)</address>
+                            <p class="bd bd_2 mg">대표이사: 구창근</p> 
+                            <p class="bd bd_2 mg">개인정보보호책임자 : 서창원</p>
+                            <p class="bd bd_2 mg">고객센터 : 1577-0700</p>
+                            <p class="bd bd_2 mg">팩스 : 02-6740-4349</p>
+                            <p class="bd mg">사업자등록번호 : 312-81-42519</p>
+                            <p class="bd bd_2 mg">통신판매업종신고증 제2011-서울중구-0771호</p>
+                            <p class="bd bd_2 mg">대표이메일 : help_master@cj.net</p>
+                            <p> Copyright ⓒ 2015 CJ Foodville ALL RIGHTS RESERVED.</p>
+                        </div>
+                    </div>
+               </footer>
+           
+    <script>
+     function sample6_execDaumPostcode() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+                    // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                    // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                    var fullAddr = ''; // 최종 주소 변수
+                    var extraAddr = ''; // 조합형 주소 변수
+
+                    // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                    if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                        fullAddr = data.roadAddress;
+
+                    } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                        fullAddr = data.jibunAddress;
+                    }
+
+                    // 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+                    if(data.userSelectedType === 'R'){
+                        //법정동명이 있을 경우 추가한다.
+                        if(data.bname !== ''){
+                            extraAddr += data.bname;
+                        }
+                        // 건물명이 있을 경우 추가한다.
+                        if(data.buildingName !== ''){
+                            extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                        }
+                        // 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+                        fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+                    }
+
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('info_add').value = data.zonecode; //5자리 새우편번호 사용
+                    document.getElementById('info_add_2').value = fullAddr;
+
+                    // 커서를 상세주소 필드로 이동한다.
+                    document.getElementById('info_add_3').focus();
+                }
+            }).open();
+        }
+    </script>
+    </body>    
+</html>    
+         
+        
+       
+      
+     
+    
+   
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

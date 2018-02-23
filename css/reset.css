@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,th,td,blockquote,form,fieldset,legend,input,select,textarea,button,figure,figcaption
+ {margin:0;padding:0}
+dl,ul,ol,li {list-style:none}
+table{ border-collapse:collapse/separate; }
+fieldset,img {border:0 none;}
+input,select,textarea,button {vertical-align:middle}
+address,caption,cite,em{font-style:normal;font-weight:normal}
+.hide{text-indent:-9999px; font-size:0; line-height:0; width:0; height:0;} 
+.dis{ display:none;}
+a {text-decoration:none} 
+body{font-size:12px; font-family:"spoqa han sans" ,Arial, sans-serif; color: #696969; background-color: #f3f0ec;} 
+header,footer,section,article,nav,aside,hgroup {display:block}
